@@ -1,0 +1,23 @@
+{
+  "name": "Telegram Bot Example",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+
+  // Install dependencies right after creating the Codespace
+  "postCreateCommand": "npm install",
+
+  // Run your bot automatically every time the Codespace starts
+  "postStartCommand": "npm start",
+
+  // Forward common ports (in case your bot needs a webhook later)
+  "forwardPorts": [3000, 8080],
+
+  // VS Code extensions that are useful for Node.js
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
